@@ -6,15 +6,23 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //prog1();
-        //prog2();
-        //prog3();
-        //prog4();
-        //prog5_6();
-        //prog7();
-        //prog8();
-        //prog9();
+        prog1();
+        prog2();
+        prog3();
+        prog4();
+        prog5_6();
+        prog7();
+        prog8();
+        prog9();
         prog10();
+        prog11();
+        prog12();
+        prog13();
+        prog14();
+        prog15();
+        prog16();
+        prog17();
+        prog18();
     }
 
     private static void prog1(){
@@ -123,6 +131,97 @@ public class Main {
         }
     }
 
+    private static void prog11(){
+        int n = 10;
+        int m = 10;
 
+        while (n>0){
+            while (m>0){
+                System.out.print("S");
+                m--;
+            }
+            System.out.println();
+            n--;
+            m=10;
+        }
+    }
 
+    private static void prog12(){
+        int n = 1;
+        int m = 1;
+
+        while (n<11){
+            while (m<11){
+                System.out.print(n*m + " ");
+                m++;
+            }
+            System.out.println();
+            n++;
+            m=1;
+        }
+    }
+
+    private static void prog13(){
+        for (int i=2;i<=100;i++){
+            System.out.print(i + " ");
+            i++;
+        }
+    }
+
+    private static void prog14(){
+        Scanner scan = new Scanner(System.in);
+        int m = scan.nextInt();
+        int n = scan.nextInt();
+
+        for (int i=0;i<m;i++){
+            for (int j=0;j<n;j++){
+                System.out.print("8");
+            }
+            System.out.println();
+        }
+    }
+
+    private static void prog15(){
+        int n = 1;
+
+        for (int i=1;i<11;i++){
+            for (int j=0;j<i;j++){
+                System.out.print("8");
+            }
+            System.out.println();
+        }
+    }
+
+    private static void prog16(){
+        for (int i=0;i<10;i++){
+            System.out.print("8");
+        }
+
+        System.out.println();
+
+        for (int i=0;i<10;i++){
+            System.out.println("8");
+        }
+    }
+
+    private static void prog17(){
+        Scanner scan = new Scanner(System.in);
+        String name = scan.nextLine();
+
+        for (int i=0;i<10;i++){
+            System.out.println(name + " любит меня");
+        }
+    }
+
+    private static void prog18(){
+        for (int i=30;i>=0;i--){
+            System.out.println(i);
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        System.out.println("Бум!");
+    }
 }
