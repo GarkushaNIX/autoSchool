@@ -1,9 +1,8 @@
-package Lesson1;
+package module1.Lesson1;
 
 import java.util.Scanner;
 
-import Lesson1.com.welcome.Hello;
-import Lesson1.com.welcome.*;
+import module1.Lesson1.com.welcome.Hello;
 
 public class Main2 {
     private static Hello welcomer = new Hello();

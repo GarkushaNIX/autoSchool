@@ -1,4 +1,4 @@
-package Lesson1;
+package module1.Lesson1;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ public class Main {
         printHelloName();
     }
 
-    public static void printHelloName(){
+    private static void printHelloName(){
         System.out.println("Name?");
         Scanner scan = new Scanner(System.in);
         String name = scan.next();

@@ -1,4 +1,4 @@
-package Lesson4;
+package module1.Lesson4;
 
 import java.util.Scanner;
 
@@ -96,8 +96,8 @@ public class Main {
             array[9-i] = pool;
         }
 
-        for (int i = 0; i < array.length; i++){
-            System.out.println(array[i]);
+        for (int i1 : array) {
+            System.out.println(i1);
         }
 
     }
@@ -122,8 +122,8 @@ public class Main {
             else arraySmall2[i-10]=arrayBig[i];
         }
 
-        for (int i = 0; i < arraySmall2.length; i++){
-            System.out.println(arraySmall2[i]);
+        for (int i1 : arraySmall2) {
+            System.out.println(i1);
         }
     }
 

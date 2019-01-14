@@ -1,4 +1,4 @@
-package Lesson1.com.welcome;
+package module1.Lesson1.com.welcome;
 
 public class Hello {
 
