@@ -14,6 +14,8 @@ public class Main {
     //Первое задание
 
     private static void prog1(){
+        System.out.println("Задание номер 1");
+        System.out.println("Введите 20 натуральных чисел");
         int[] array = initializeArray();
         max(array);
     }
@@ -44,6 +46,8 @@ public class Main {
     //Второе задание
 
     private static void prog2(){
+        System.out.println("Задание номер 2");
+        System.out.println("Введите 8 строк");
         String[] array = new String[10];
         Scanner scan = new Scanner(System.in);
 
@@ -53,6 +57,7 @@ public class Main {
             array[i] = s;
         }
 
+        System.out.println("Содержимое массива в обратном порядке:");
         for (int i = 9; i >= 0; i--){
             System.out.println(array[i]);
         }
@@ -61,25 +66,30 @@ public class Main {
     //Третье задание
 
     private static void prog3(){
-        String[] arrayS = new String[10];
-        int[] arrayI = new int[10];
+        System.out.println("Задание номер 3");
+        System.out.println("Введите 10 строк разной длины");
+        String[] arrayStr = new String[10];
+        int[] arrayInt = new int[10];
         Scanner scan = new Scanner(System.in);
 
-        for (int i = 0; i < arrayS.length; i++){
+        for (int i = 0; i < arrayStr.length; i++){
             String s;
             s = scan.nextLine();
-            arrayS[i] = s;
+            arrayStr[i] = s;
         }
 
-        for (int i = 0; i < arrayS.length; i++){
-            arrayI[i] = arrayS[i].length();
-            System.out.println(arrayI[i]);
+        System.out.println("Массив длин введённых строк:");
+        for (int i = 0; i < arrayStr.length; i++){
+            arrayInt[i] = arrayStr[i].length();
+            System.out.println(arrayInt[i]);
         }
     }
 
     //Четвёртое задание
 
     private static void prog4(){
+        System.out.println("Задание номер 4");
+        System.out.println("Введите 10 натуральных чисел");
         int[] array = new int[10];
 
         Scanner scan = new Scanner(System.in);
@@ -96,6 +106,7 @@ public class Main {
             array[9-i] = pool;
         }
 
+        System.out.println("Массив в обратном порядке:");
         for (int i1 : array) {
             System.out.println(i1);
         }
@@ -105,6 +116,8 @@ public class Main {
     //Пятое задание
 
     private static void prog5(){
+        System.out.println("Задание номер 5");
+        System.out.println("Введите 20 натуральных чисел");
         int[] arrayBig = new int[20];
         int[] arraySmall1 = new int[10];
         int[] arraySmall2 = new int[10];
@@ -122,6 +135,7 @@ public class Main {
             else arraySmall2[i-10]=arrayBig[i];
         }
 
+        System.out.println("Второй массив:");
         for (int i1 : arraySmall2) {
             System.out.println(i1);
         }

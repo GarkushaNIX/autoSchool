@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main (String[] args){
-        prog1("qwert asd asd asd a.dgf dg.");
+        prog1("qwert asd asddd asd a.dgf dg.");
         System.out.println();
         prog2();
         System.out.println();
@@ -12,6 +12,7 @@ public class Main {
     }
 
     private static void prog1(String str){
+        System.out.println("Задание номер 1");
         System.out.println("Первый символ "+ str.charAt(0));
         System.out.println("Последний символ "+ str.charAt(str.length()-1));
         if (str.length()%2 != 0) {
@@ -28,6 +29,7 @@ public class Main {
     }
 
     private static void prog2(){
+        System.out.println("Задание номер 2");
         String find = "";
         Scanner scan = new Scanner(System.in);
 
@@ -49,6 +51,7 @@ public class Main {
     }
 
     private static void prog3(String str){
+        System.out.println("Задание номер 3");
         int pos = 0;
 
         String[] array = str.split(" ");

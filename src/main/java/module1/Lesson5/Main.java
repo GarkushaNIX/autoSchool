@@ -1,6 +1,7 @@
 package module1.Lesson5;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -26,6 +27,7 @@ public class Main {
     }
 
     private static void prog1(){
+        System.out.println("Задание номер 1");
         Scanner scan = new Scanner(System.in);
         int a = scan.nextInt();
         int b = scan.nextInt();
@@ -35,6 +37,7 @@ public class Main {
     }
 
     private static void prog2(){
+        System.out.println("Задание номер 2");
         Scanner scan = new Scanner(System.in);
         int[] array = new int[4];
 
@@ -52,22 +55,23 @@ public class Main {
     }
 
     private static void prog3(){
+        System.out.println("Задание номер 3");
         Scanner scan = new Scanner(System.in);
-        int[] array = new int[3];
+        Integer[] array = new Integer[3];
 
         for (int i=0; i<3; i++){
             array[i] = scan.nextInt();
         }
 
-        Arrays.sort(array);
+        Arrays.sort(array, Collections.reverseOrder());
 
         for (int i=0; i<3; i++){
             System.out.println(array[i]);
         }
-        System.out.println("Максимальное число: " );
     }
 
     private static void prog4(){
+        System.out.println("Задание номер 4");
         Scanner scan = new Scanner(System.in);
         String name1 = scan.nextLine();
         String name2 = scan.nextLine();
@@ -77,6 +81,7 @@ public class Main {
     }
 
     private static void prog5_6(){
+        System.out.println("Задания номер 5 и 6");
         Scanner scan = new Scanner(System.in);
         String name = scan.nextLine();
         int age = scan.nextInt();
@@ -86,6 +91,7 @@ public class Main {
     }
 
     private static void prog7(){
+        System.out.println("Задание номер 7");
         Scanner scan = new Scanner(System.in);
         Random random = new Random();
         int secret = random.nextInt(20 + 1);
@@ -105,6 +111,7 @@ public class Main {
     }
 
     private static void prog8(){
+        System.out.println("Задание номер 8");
         int i=1;
         while (i<11){
             System.out.println(i);
@@ -113,6 +120,7 @@ public class Main {
     }
 
     private static void prog9(){
+        System.out.println("Задание номер 9");
         int i=10;
         while (i>0){
             System.out.println(i);
@@ -121,6 +129,7 @@ public class Main {
     }
 
     private static void prog10(){
+        System.out.println("Задание номер 10");
         Scanner scan = new Scanner(System.in);
         String str = scan.nextLine();
         int n = scan.nextInt();
@@ -132,6 +141,7 @@ public class Main {
     }
 
     private static void prog11(){
+        System.out.println("Задание номер 11");
         int n = 10;
         int m = 10;
 
@@ -147,6 +157,7 @@ public class Main {
     }
 
     private static void prog12(){
+        System.out.println("Задание номер 12");
         int n = 1;
         int m = 1;
 
@@ -162,13 +173,16 @@ public class Main {
     }
 
     private static void prog13(){
+        System.out.println("Задание номер 13");
         for (int i=2;i<=100;i++){
             System.out.print(i + " ");
             i++;
         }
+        System.out.println();
     }
 
     private static void prog14(){
+        System.out.println("Задание номер 14");
         Scanner scan = new Scanner(System.in);
         int m = scan.nextInt();
         int n = scan.nextInt();
@@ -182,8 +196,7 @@ public class Main {
     }
 
     private static void prog15(){
-        int n = 1;
-
+        System.out.println("Задание номер 15");
         for (int i=1;i<11;i++){
             for (int j=0;j<i;j++){
                 System.out.print("8");
@@ -193,6 +206,7 @@ public class Main {
     }
 
     private static void prog16(){
+        System.out.println("Задание номер 16");
         for (int i=0;i<10;i++){
             System.out.print("8");
         }
@@ -205,6 +219,7 @@ public class Main {
     }
 
     private static void prog17(){
+        System.out.println("Задание номер 17");
         Scanner scan = new Scanner(System.in);
         String name = scan.nextLine();
 
@@ -214,6 +229,7 @@ public class Main {
     }
 
     private static void prog18(){
+        System.out.println("Задание номер 18");
         for (int i=30;i>=0;i--){
             System.out.println(i);
             try {
