@@ -14,7 +14,7 @@ public class Main {
             formsArray[i] = randomForm();
         }
 
-        System.out.println("\nAscending sorting of massive by area");
+        System.out.println("\nSorting an array by increasing the area of the figures");
 
         Form fig;
 

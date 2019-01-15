@@ -6,16 +6,10 @@ public class Square extends Form {
     }
 
     //In case with the square, coordinates represent 2 diagonal edges of square
-    public double[][] getCoordinates () {
-        double[][] coordinates = new double[2][2];
-        coordinates[0][0] = x[0];
-        coordinates[0][1] = y[0];
-        coordinates[1][0] = x[1];
-        coordinates[1][1] = y[1];
-        return coordinates;
-    }
 
     public double getArea () {
+        double[] x = getX();
+        double[] y = getY();
         return (double) Math.round(((x[0]-x[1]) * (x[0]-x[1]) + (y[0]-y[1]) * (y[0]-y[1]))/2);
     }
 

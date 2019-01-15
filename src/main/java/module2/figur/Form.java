@@ -1,17 +1,15 @@
 package module2.figur;
 
 public abstract class Form {
-    protected String name;
-    protected double[] x;
-    protected double[] y;
+    private String name;
+    private double[] x;
+    private double[] y;
 
-    public Form (double[] x, double[] y, String name){
+    Form (double[] x, double[] y, String name){
         this.x = x;
         this.y = y;
         this.name = name;
     }
-
-    public abstract double[][] getCoordinates();
 
     public abstract double getArea();
 
@@ -19,5 +17,11 @@ public abstract class Form {
         return name;
     }
 
+    double[] getX() {
+        return x;
+    }
 
+    double[] getY() {
+        return y;
+    }
 }
